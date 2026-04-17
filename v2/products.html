@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>产品 - 思杰马克丁 | 软件分类与展示</title>
+  <link rel="stylesheet" href="./prototype.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="./index.html">思杰马克丁</a>
+      <nav class="links">
+        <a href="./index.html">首页</a>
+        <a class="active" href="./products.html">产品</a>
+        <a href="./solutions.html">解决方案</a>
+        <a href="./support.html">服务支持</a>
+        <a href="./about.html">关于思杰</a>
+        <a href="./partners.html">合作伙伴</a>
+        <a class="btn brand" href="./index.html#contact">企业咨询</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero container">
+    <div class="head">
+      <h2>产品中心</h2>
+      <p>思杰马克丁拥有数百款全球正版软件授权，覆盖个人与企业全场景；按类别整理便于快速选型，<strong>所有软件均提供本地化适配与全流程服务</strong>（《优化方案》第三节·产品·导语）。</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container layout-split">
+      <aside class="sidebar" id="cat-personal">
+        <h4>个人软件</h4>
+        <button type="button" data-filter="p-design" class="active">创意设计类</button>
+        <div class="subcats">CorelDRAW、会声会影、PhotoZoom 等</div>
+        <button type="button" data-filter="p-audio">音频编辑类</button>
+        <div class="subcats">FL Studio、EarMaster 等</div>
+        <button type="button" data-filter="p-office">办公效率类</button>
+        <div class="subcats">PDF Expert、CrossOver 等</div>
+        <button type="button" data-filter="p-tool">实用工具类</button>
+        <div class="subcats">HyperSnap、EasyRecovery 等</div>
+
+        <h4 id="cat-enterprise">企业软件</h4>
+        <button type="button" data-filter="e-data">数据分析类</button>
+        <div class="subcats">IBM SPSS、Minitab 等</div>
+        <button type="button" data-filter="e-sec">安全防护类</button>
+        <div class="subcats">AppScan、Avast 等</div>
+        <button type="button" data-filter="e-mfg">生产管理类</button>
+        <div class="subcats">BarTender 等</div>
+        <button type="button" data-filter="e-rd">科研办公类</button>
+        <div class="subcats">ChemDraw、MathType 等</div>
+        <button type="button" data-filter="e-remote">远程协作类</button>
+        <div class="subcats">TeamViewer 等</div>
+      </aside>
+
+      <div>
+        <p class="muted" style="font-size:14px;margin:0 0 10px;">可选筛选：点击左侧分类，右侧卡片联动（方案「筛选功能（可选）」示意）。软件详情页可外链至各产品官网（方案 3·产品·4）。</p>
+        <div class="toolbar" id="quickTabs"></div>
+        <div class="grid-3" id="productList"></div>
+
+        <div class="card item" style="margin-top:22px;">
+          <h4>底部推荐</h4>
+          <p class="muted">热门组合：教育创作包（Camtasia + FL Studio）、制造效率包（BarTender + IBM SPSS）、企业合规采购包。详情可咨询销售或前往「服务支持」获取白皮书。</p>
+          <div class="cta-row" style="margin-top:10px;">
+            <a class="btn brand" href="./support.html">联系采购 / 获取资料</a>
+            <a class="btn ghost" href="./solutions.html">按行业看方案</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container copy" style="border:0;padding:20px 0;">© 2026 思杰马克丁 · 产品页原型 · 依据《思杰官网优化方案》第三节（二）</div>
+  </footer>
+
+  <script>
+    const products = [
+      { id: "p-design", name: "CorelDRAW", badge: "Corel 官方授权", fn: "矢量绘图、排版与品牌视觉", os: "Windows / macOS", scene: "创意设计、印刷输出", vendor: "独家/区域授权以合同为准" },
+      { id: "p-design", name: "会声会影", badge: "Corel 授权经销", fn: "视频剪辑、模板与成片输出", os: "Windows", scene: "自媒体、企业宣传视频", vendor: "正版序列号与升级服务" },
+      { id: "p-design", name: "PhotoZoom", badge: "官方授权", fn: "无损放大与图像增强", os: "Windows / macOS", scene: "摄影后期、电商素材", vendor: "厂商授权标识见详情页" },
+      { id: "p-audio", name: "FL Studio", badge: "Image-Line 授权", fn: "编曲、混音与母带处理", os: "Windows / macOS", scene: "音乐制作、教育音频课程", vendor: "正版授权与版本升级" },
+      { id: "p-audio", name: "EarMaster", badge: "官方授权", fn: "视唱练耳与音乐基础训练", os: "多平台", scene: "音乐院校与培训机构", vendor: "教育批量授权可询" },
+      { id: "p-office", name: "PDF Expert", badge: "官方授权", fn: "PDF 阅读、标注与表单", os: "macOS / iOS", scene: "移动办公、个人效率", vendor: "个人采购 / 企业批量" },
+      { id: "p-tool", name: "EasyRecovery", badge: "官方授权", fn: "误删恢复与存储介质修复", os: "Windows", scene: "企业数据应急、医疗科研", vendor: "技术支持与远程协助" },
+      { id: "e-data", name: "IBM SPSS", badge: "IBM SPSS 中国大陆独家转售（方案表述）", fn: "统计分析、预测建模与决策支持", os: "Windows / macOS / Linux 服务端", scene: "企事业、高校科研、政府", vendor: "企业报价与集中部署" },
+      { id: "e-data", name: "Minitab", badge: "官方授权", fn: "质量统计、DOE 与六西格玛", os: "Windows", scene: "制造业质量部门", vendor: "培训 + 部署一体化" },
+      { id: "e-sec", name: "AppScan", badge: "厂商授权", fn: "应用安全测试与漏洞扫描", os: "企业环境", scene: "金融、互联网、政企", vendor: "合规与安全联合方案" },
+      { id: "e-mfg", name: "BarTender", badge: "Seagull 授权 · 标签场景", fn: "标签设计、打印自动化与追溯", os: "Windows 服务器/客户端", scene: "电子制造、医疗 UDI、物流", vendor: "制造行业成功案例见解决方案页" },
+      { id: "e-rd", name: "ChemDraw", badge: "官方授权", fn: "化学结构绘制与实验记录", os: "Windows / macOS", scene: "制药、材料、高校实验室", vendor: "科研办公类组合采购" },
+      { id: "e-rd", name: "MathType", badge: "官方授权", fn: "公式编辑与论文排版", os: "Office / WPS 插件", scene: "教育、科研出版", vendor: "校园批量授权" },
+      { id: "e-remote", name: "TeamViewer", badge: "官方合作", fn: "远程支持、会议与设备管理", os: "跨平台", scene: "IT 运维、客服、分支机构", vendor: "企业控制台与审计" }
+    ];
+
+    let filter = "p-design";
+    const listEl = document.getElementById("productList");
+    const tabsEl = document.getElementById("quickTabs");
+
+    function render() {
+      const rows = products.filter(p => p.id === filter);
+      listEl.innerHTML = rows.map(p => `
+        <article class="card item product-card">
+          <h4>${p.name}</h4>
+          <p class="meta">${p.badge}</p>
+          <p><strong>核心功能：</strong>${p.fn}</p>
+          <p><strong>适配系统：</strong>${p.os}</p>
+          <p><strong>应用场景：</strong>${p.scene}</p>
+          <p class="muted" style="font-size:12px;">${p.vendor}</p>
+          <div class="row">
+            <button type="button" class="btn">查看详情（外链产品站）</button>
+            <button type="button" class="btn ghost">联系销售</button>
+          </div>
+        </article>
+      `).join("") || "<p class=\"muted\">该分类下示例条目可在正式站补充更多 SKU。</p>";
+    }
+
+    function syncQuickTabs() {
+      tabsEl.querySelectorAll(".tab").forEach(x => x.classList.toggle("active", x.dataset.q === filter));
+    }
+
+    document.querySelectorAll(".sidebar button[data-filter]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".sidebar button[data-filter]").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        filter = btn.dataset.filter;
+        syncQuickTabs();
+        render();
+      });
+    });
+
+    const quick = ["p-design", "p-audio", "e-data", "e-mfg", "e-remote"];
+    const labels = { "p-design": "创意设计", "p-audio": "音频", "e-data": "数据分析", "e-mfg": "生产管理", "e-remote": "远程协作" };
+    tabsEl.innerHTML = quick.map(k => `<button type="button" class="tab ${k===filter?"active":""}" data-q="${k}">${labels[k]}</button>`).join("");
+    tabsEl.addEventListener("click", e => {
+      const t = e.target.closest(".tab");
+      if (!t) return;
+      filter = t.dataset.q;
+      document.querySelectorAll(".sidebar button[data-filter]").forEach(b => b.classList.toggle("active", b.dataset.filter === filter));
+      syncQuickTabs();
+      render();
+    });
+
+    render();
+
+    const hash = location.hash.replace("#", "");
+    if (hash === "cat-enterprise") {
+      document.querySelector('[data-filter="e-data"]')?.click();
+    }
+  </script>
+</body>
+</html>
