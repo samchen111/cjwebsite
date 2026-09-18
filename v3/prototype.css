@@ -597,3 +597,60 @@ footer {
   .news-grid { grid-template-columns:1fr 1fr; }
 }
 @media(max-width:560px){ .news-grid { grid-template-columns:1fr; } }
+
+
+/* v3 home refinements: neutral Bento cards */
+.bento-card,
+.bento-manufacturing,
+.bento-it,
+.bento-health,
+.bento-creative,
+.bento-office,
+.bento-research,
+.bento-energy {
+  background:#fff;
+  color:#111827;
+  border:1px solid #e5e7eb;
+  box-shadow:0 6px 20px rgba(15,23,42,.04);
+}
+.bento-card:hover {
+  border-color:#cbd5e1;
+  box-shadow:0 16px 34px rgba(15,23,42,.09);
+}
+.bento-card::after { background:#94a3b8; opacity:.07; }
+.bento-card li { color:#111827; background:#f8fafc; border-color:#e5e7eb; }
+
+/* Horizontal customer story cards */
+.success-list { display:flex; flex-direction:column; gap:18px; }
+.success-card { display:grid; grid-template-columns:260px minmax(0,1fr) 190px; min-height:250px; border:1px solid #e5e7eb; border-radius:22px; overflow:hidden; background:#fff; box-shadow:0 8px 26px rgba(15,23,42,.05); transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease; }
+.success-card:hover { transform:translateY(-3px); border-color:#cbd5e1; box-shadow:0 18px 38px rgba(15,23,42,.09); }
+.success-visual { display:flex; flex-direction:column; justify-content:flex-end; padding:24px; color:#fff; background:#1e293b; }
+.success-visual span { margin-bottom:9px; font-size:12px; font-weight:800; letter-spacing:.12em; opacity:.72; }
+.success-visual strong { max-width:180px; font-size:25px; line-height:1.24; }
+.success-visual-mfg { background:linear-gradient(145deg,#1e3a8a,#2563eb); }
+.success-visual-med { background:linear-gradient(145deg,#065f46,#10b981); }
+.success-visual-edu { background:linear-gradient(145deg,#581c87,#a855f7); }
+.success-copy { display:flex; flex-direction:column; justify-content:center; padding:30px 34px; }
+.success-client { color:var(--brand); font-size:12px; font-weight:800; letter-spacing:.08em; }
+.success-copy h3 { margin:10px 0 11px; font-size:23px; line-height:1.35; }
+.success-copy p { max-width:650px; margin:0; color:var(--muted); font-size:14px; line-height:1.75; }
+.success-products { display:flex; flex-wrap:wrap; gap:7px; margin-top:18px; }
+.success-products span { padding:6px 9px; border-radius:999px; background:#f8fafc; border:1px solid #e5e7eb; color:#475569; font-size:11px; font-weight:700; }
+.success-result { display:flex; flex-direction:column; justify-content:center; padding:26px; border-left:1px solid #e5e7eb; background:#fafafa; }
+.success-result small { color:#64748b; font-size:11px; }
+.success-result strong { margin:4px 0 16px; color:#111827; font-size:21px; }
+.success-result a { margin-top:4px; color:var(--brand); font-size:12px; font-weight:800; }
+
+@media(max-width:900px){
+  .success-card { grid-template-columns:210px 1fr; }
+  .success-result { grid-column:1 / -1; flex-direction:row; align-items:center; gap:14px; border-top:1px solid #e5e7eb; border-left:0; }
+  .success-result strong { margin:0 18px 0 0; }
+  .success-result a { margin:0 0 0 auto; }
+}
+@media(max-width:640px){
+  .success-card { grid-template-columns:1fr; }
+  .success-visual { min-height:190px; }
+  .success-copy { padding:24px; }
+  .success-result { grid-column:auto; flex-wrap:wrap; }
+  .success-result a { width:100%; margin-top:8px; }
+}
