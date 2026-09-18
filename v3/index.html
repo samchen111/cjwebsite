@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页 - 思杰马克丁 | 全球正版商业软件发行商</title>
+  <meta name="description" content="思杰马克丁：正版保障、本地化适配、全流程服务、合规安心。授权代理+本地化服务，服务个人与企业用户。">
+  <link rel="stylesheet" href="./prototype.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a class="brand" href="./index.html">思杰马克丁</a>
+      <nav class="links">
+        <a href="./solutions.html">行业解决方案</a>
+        <a href="./products.html">产品中心</a>
+        <a href="./support.html">服务支持</a>
+        <a href="./index.html#news">新闻中心</a>
+        <a href="./about.html">关于我们</a>
+        <button type="button" class="btn brand" id="btnConsult">企业咨询</button>
+      </nav>
+    </div>
+    <div class="mega-panel" id="megaPanel">
+      <div class="container mega-inner">
+        <div class="mega-cats" id="megaCats"></div>
+        <div class="mega-items" id="megaItems"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- （一）首页：Banner（通栏、橙白渐变、黑字） -->
+    <section class="hero hero-banner">
+      <div class="container hero-banner-content">
+        <span class="pill hero-banner-pill">企业宣传视频播放区（占位）</span>
+        <h1 class="hero-banner-title">全球正版商业软件发行商</h1>
+        <p class="hero-banner-lead">以「授权代理 + 本地化服务」为核心，集产品展示、服务落地、行业适配与品牌背书于一体，兼顾 B2C 个人与 B2B 企业需求，传递正版保障、本地化适配、全流程服务、合规安心。</p>
+      </div>
+    </section>
+
+    <!-- 行业领域：横向滚动 -->
+    <section class="section industry-section">
+      <div class="container">
+        <div class="head head-row">
+          <div>
+            <span class="eyebrow">INDUSTRIES</span>
+            <h2>深耕行业，理解每一种专业场景</h2>
+            <p>围绕研发、生产、运营与合规，为七大重点行业提供正版软件与本地化服务。</p>
+          </div>
+          <div class="carousel-actions" aria-label="行业卡片控制">
+            <button type="button" id="industryPrev" aria-label="向左滚动">←</button>
+            <button type="button" id="industryNext" aria-label="向右滚动">→</button>
+          </div>
+        </div>
+        <div class="industry-track" id="industryTrack">
+          <a class="industry-card industry-1" href="./solutions.html#industry-mfg"><span>01</span><div><h3>机械装备制造</h3><p>设计、仿真、加工与质量管理</p></div></a>
+          <a class="industry-card industry-2" href="./solutions.html#industry-auto"><span>02</span><div><h3>汽车&amp;轨交</h3><p>研发协同、工程分析与安全合规</p></div></a>
+          <a class="industry-card industry-3" href="./solutions.html#industry-electronics"><span>03</span><div><h3>电子半导体</h3><p>电气设计、数据分析与产线标识</p></div></a>
+          <a class="industry-card industry-4" href="./solutions.html#industry-aero"><span>04</span><div><h3>航空航天</h3><p>高精度仿真与复杂系统研发</p></div></a>
+          <a class="industry-card industry-5" href="./solutions.html#industry-energy"><span>05</span><div><h3>能源电力</h3><p>电气工程、资产运维与数字化</p></div></a>
+          <a class="industry-card industry-6" href="./solutions.html#industry-petro"><span>06</span><div><h3>石油化工</h3><p>流程安全、可靠性与生产优化</p></div></a>
+          <a class="industry-card industry-7" href="./solutions.html#industry-life"><span>07</span><div><h3>医药与生命科学</h3><p>科研分析、医疗设计与合规管理</p></div></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 热门产品：Bento UI -->
+    <section class="section soft product-bento-section">
+      <div class="container">
+        <div class="head">
+          <span class="eyebrow">POPULAR PRODUCTS</span>
+          <h2>热门产品</h2>
+          <p>从智能制造到创意生产，按业务场景快速找到适合的专业工具。</p>
+        </div>
+        <div class="bento-grid">
+          <a class="bento-card bento-manufacturing" href="./products.html#smart-manufacturing">
+            <span class="bento-index">01</span><div><p class="bento-kicker">SMART MANUFACTURING</p><h3>智能制造</h3></div>
+            <ul><li>MasterCam</li><li>Abaqus</li><li>BarTender</li><li>Minitab</li><li>JewelCAD</li></ul>
+          </a>
+          <a class="bento-card bento-it" href="./products.html#it">
+            <span class="bento-index">02</span><div><p class="bento-kicker">INFORMATION TECHNOLOGY</p><h3>IT技术</h3></div>
+            <ul><li>IDA</li><li>Xshell</li><li>GitLab</li><li>tenable Nessus</li><li>AppScan</li><li>SonarQube</li><li>Easyrecovery</li><li>Crossover</li></ul>
+          </a>
+          <a class="bento-card bento-health" href="./products.html#healthcare">
+            <span class="bento-index">03</span><div><p class="bento-kicker">HEALTHCARE</p><h3>健康医疗</h3></div>
+            <ul><li>exocad</li><li>DNASTAR</li><li>GraphPad</li><li>Oligo</li><li>3Shape</li></ul>
+          </a>
+          <a class="bento-card bento-creative" href="./products.html#creative">
+            <span class="bento-index">04</span><div><p class="bento-kicker">CREATIVE</p><h3>创意设计</h3></div>
+            <ul><li>CorelDRAW</li><li>Camtasia</li><li>FLStudio</li><li>Luminar</li><li>Guitarpro</li><li>Capture One</li><li>Exposure</li></ul>
+          </a>
+          <a class="bento-card bento-office" href="./products.html#office">
+            <span class="bento-index">05</span><div><p class="bento-kicker">PRODUCTIVITY</p><h3>办公效率</h3></div>
+            <ul><li>Microsoft 365</li><li>WPS</li><li>Thinkcell</li></ul>
+          </a>
+          <a class="bento-card bento-research" href="./products.html#research">
+            <span class="bento-index">06</span><div><p class="bento-kicker">EDUCATION &amp; RESEARCH</p><h3>教育科研</h3></div>
+            <ul><li>IBM SPSS Statistics</li><li>ChemDraw</li><li>MathType</li></ul>
+          </a>
+          <a class="bento-card bento-energy" href="./products.html#green-energy">
+            <span class="bento-index">07</span><div><p class="bento-kicker">GREEN ENERGY</p><h3>绿色能源</h3></div>
+            <ul><li>SEE Electrical</li></ul>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 客户成功案例 -->
+    <section class="section soft">
+      <div class="container">
+        <div class="head">
+          <h2>客户成功案例</h2>
+          <p>不同行业标杆摘要；完整案例与行业对比见「解决方案」页（方案第三节·首页模块 6）。</p>
+        </div>
+        <div class="card case-card">
+          <div class="case-visual">电子制造</div>
+          <div>
+            <span class="pill">某电子制造企业</span>
+            <p><strong>成果：</strong>标签错误率从 3% 降至 0.1%，年节省返工成本超 50 万元（方案示例口径）。</p>
+            <blockquote>「正版保障 + 本地化服务让产线与采购都更省心。」</blockquote>
+            <a class="btn ghost" href="./solutions.html#cases">查看更多行业案例</a>
+          </div>
+        </div>
+        <div class="grid-2" style="margin-top:14px;">
+          <div class="card item">
+            <h4>大型药企（脱敏）</h4>
+            <p>合规采购与数据安全诉求；正版授权 + 合规咨询降低风险。</p>
+          </div>
+          <div class="card item">
+            <h4>高校科研</h4>
+            <p>IBM SPSS、MathType 等统一部署；教学科研效率提升，续约率超 90%。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 客户与伙伴展示 + 数据 -->
+    <section class="section">
+      <div class="container">
+        <div class="head">
+          <h2>值得信赖的合作伙伴</h2>
+          <p>客户及伙伴 logo 滚动展示（示意文案），下方为核心数据（方案第三节·首页模块 7）。</p>
+        </div>
+        <div class="ticker">
+          <div class="ticker-track">
+            <span>Tencent腾讯</span><span>HUAWEI华为</span><span>阿里巴巴</span><span>百度</span><span>京东</span><span>网易</span><span>Lenovo</span><span>中国联通</span><span>中国电信</span><span>中国移动</span>
+            <span>Tencent腾讯</span><span>HUAWEI华为</span><span>阿里巴巴</span><span>百度</span><span>京东</span><span>网易</span><span>Lenovo</span><span>中国联通</span><span>中国电信</span><span>中国移动</span>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="card stat"><strong>16+</strong><p class="muted" style="margin:6px 0 0;">年行业经验</p></div>
+          <div class="card stat"><strong>120万+</strong><p class="muted" style="margin:6px 0 0;">服务用户</p></div>
+          <div class="card stat"><strong>10000+</strong><p class="muted" style="margin:6px 0 0;">渠道伙伴</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 底部信息：方案首页模块 8 -->
+  <footer id="contact">
+    <div class="container footer-grid">
+      <div>
+        <h4>思杰马克丁</h4>
+        <p>苏州思杰马克丁软件有限公司，成立于 2009 年 12 月，位于苏州工业园区，致力于推广正版软件应用与知识产权维护。</p>
+        <p style="margin-top:8px;">微信公众号：思杰马克丁（示例）</p>
+      </div>
+      <div>
+        <h4>快捷入口</h4>
+        <ul>
+          <li><a href="./products.html">产品中心</a></li>
+          <li><a href="./about.html#join">加入我们</a></li>
+          <li><a href="./about.html#channel">渠道合作</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <ul>
+          <li>苏州工业园区</li>
+          <li><a href="mailto:contact@makeding.com">contact@makeding.com</a></li>
+          <li><a href="tel:400-xxx-xxxx">400-xxx-xxxx</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>法律信息</h4>
+        <ul>
+          <li><a href="#">隐私政策</a></li>
+          <li><a href="#">用户协议</a></li>
+          <li><a href="#">网站地图</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copy">
+      <span>© 2026 苏州思杰马克丁软件有限公司 版权所有</span>
+      <span>原型页面 · 内容依据《思杰官网优化方案》编排</span>
+    </div>
+  </footer>
+
+  <dialog id="dlgConsult" style="border:0;border-radius:14px;padding:0;width:min(480px,92vw);">
+    <form method="dialog" style="padding:20px;">
+      <h3 style="margin:0 0 8px;">企业咨询</h3>
+      <p class="muted" style="margin:0 0 12px;color:var(--muted);font-size:14px;">提交后由顾问对接（原型示意）。</p>
+      <div class="form-grid">
+        <div><label>姓名</label><input type="text" placeholder="必填"></div>
+        <div><label>企业名称</label><input type="text" placeholder="选填"></div>
+        <div><label>需求类型</label>
+          <select><option>企业采购</option><option>行业方案</option><option>技术支持</option><option>培训服务</option></select>
+        </div>
+      </div>
+      <div class="cta-row" style="margin-top:14px;justify-content:flex-end;">
+        <button type="button" class="btn ghost" id="dlgClose">取消</button>
+        <button type="submit" class="btn brand">提交</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script>
+    const megaData = {
+      products: {
+        cats: ["个人软件", "企业软件", "热门推荐"],
+        items: {
+          "个人软件": [
+            ["CorelDRAW", "创意设计类"], ["会声会影", "视频剪辑"], ["PhotoZoom", "图像放大"],
+            ["FL Studio", "音频编辑"], ["PDF Expert", "办公效率"], ["CrossOver", "跨平台应用"]
+          ],
+          "企业软件": [
+            ["IBM SPSS", "数据分析"], ["Minitab", "质量管理"], ["BarTender", "标签管理"],
+            ["AppScan", "应用安全"], ["ChemDraw", "科研办公"], ["TeamViewer", "远程协作"]
+          ],
+          "热门推荐": [
+            ["会声会影", "个人视频"], ["CorelDRAW", "平面设计"], ["IBM SPSS", "统计分析"],
+            ["BarTender", "制造标签"], ["FL Studio", "音乐制作"], ["查看全部", "进入产品中心"]
+          ]
+        }
+      },
+      solutions: {
+        cats: ["制造", "教育", "创意", "医疗", "科研"],
+        items: {
+          "制造": [["BarTender", "标签自动化"], ["IBM SPSS", "质量数据分析"], ["合规维权", "版权治理"]],
+          "教育": [["Camtasia", "微课制作"], ["FL Studio", "音频课程"], ["批量授权", "校园合规"]],
+          "创意": [["CorelDRAW", "正版设计"], ["会声会影", "视频包装"], ["培训", "本地化落地"]],
+          "医疗": [["BarTender", "UDI 标签"], ["EasyRecovery", "数据恢复"], ["合规", "安全咨询"]],
+          "科研": [["IBM SPSS", "统计建模"], ["ChemDraw", "化学绘图"], ["MathType", "公式排版"]]
+        }
+      }
+    };
+
+    const megaPanel = document.getElementById("megaPanel");
+    const megaCats = document.getElementById("megaCats");
+    const megaItems = document.getElementById("megaItems");
+    let megaType = "products";
+    let megaCat = megaData.products.cats[0];
+
+    function renderMega() {
+      const data = megaData[megaType];
+      megaCats.innerHTML = data.cats.map(c =>
+        `<button type="button" class="${c === megaCat ? "active" : ""}" data-cat="${c}">${c}</button>`
+      ).join("");
+      const items = data.items[megaCat] || [];
+      const base = megaType === "products" ? "./products.html" : "./solutions.html";
+      megaItems.innerHTML = items.map(([t, d]) =>
+        `<a class="mini-card" href="${base}"><h5>${t}</h5><p>${d}</p></a>`
+      ).join("");
+      megaCats.querySelectorAll("button").forEach(btn => {
+        btn.addEventListener("click", () => {
+          megaCat = btn.dataset.cat;
+          renderMega();
+        });
+      });
+    }
+
+    document.querySelectorAll(".nav-trigger").forEach(el => {
+      el.addEventListener("mouseenter", () => {
+        megaType = el.dataset.mega;
+        megaCat = megaData[megaType].cats[0];
+      megaPanel.classList.add("open");
+        renderMega();
+      });
+    });
+
+    document.getElementById("siteHeader").addEventListener("mouseleave", () => {
+      megaPanel.classList.remove("open");
+    });
+
+    const industryTrack = document.getElementById("industryTrack");
+    const scrollIndustry = direction => industryTrack?.scrollBy({ left: direction * 360, behavior: "smooth" });
+    document.getElementById("industryPrev")?.addEventListener("click", () => scrollIndustry(-1));
+    document.getElementById("industryNext")?.addEventListener("click", () => scrollIndustry(1));
+
+    document.getElementById("btnConsult").addEventListener("click", () => {
+      document.getElementById("dlgConsult").showModal();
+    });
+    document.getElementById("dlgClose").addEventListener("click", () => {
+      document.getElementById("dlgConsult").close();
+    });
+  </script>
+</body>
+</html>
