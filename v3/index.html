@@ -8,23 +8,67 @@
   <link rel="stylesheet" href="./prototype.css">
 </head>
 <body>
-  <header class="site-header" id="siteHeader">
+  <header class="site-header">
     <div class="container nav">
       <a class="brand" href="./index.html">思杰马克丁</a>
-      <nav class="links">
-        <a href="./solutions.html">行业解决方案</a>
-        <a href="./products.html">产品中心</a>
-        <a href="./support.html">服务支持</a>
-        <a href="./index.html#news">新闻中心</a>
-        <a href="./about.html">关于我们</a>
-        <button type="button" class="btn brand" id="btnConsult">企业咨询</button>
+      <nav class="links aws-nav" aria-label="主导航">
+        <div class="nav-menu">
+          <a class="nav-label" href="./solutions.html">行业解决方案 <span>⌄</span></a>
+          <div class="nav-dropdown">
+            <div class="container dropdown-layout">
+              <div class="dropdown-intro"><span>INDUSTRIES</span><h3>行业解决方案</h3><p>面向关键行业的专业软件组合与本地化服务。</p><a href="./solutions.html">查看全部方案 →</a></div>
+              <div class="dropdown-links"><h4>重点行业</h4><a href="./solutions.html#industry-mfg"><b>机械装备制造</b><small>设计、仿真与加工</small></a><a href="./solutions.html#industry-auto"><b>汽车 &amp; 轨交</b><small>研发协同与工程分析</small></a><a href="./solutions.html#industry-electronics"><b>电子半导体</b><small>电气设计与产线管理</small></a><a href="./solutions.html#industry-aero"><b>航空航天</b><small>复杂系统研发</small></a></div>
+              <div class="dropdown-links"><h4>更多领域</h4><a href="./solutions.html#industry-energy"><b>能源电力</b><small>工程与资产运维</small></a><a href="./solutions.html#industry-petro"><b>石油化工</b><small>流程安全与生产优化</small></a><a href="./solutions.html#industry-life"><b>医药与生命科学</b><small>科研、设计与合规</small></a></div>
+              <a class="dropdown-feature" href="./solutions.html"><span>行业洞察</span><strong>从软件选型到落地交付</strong><p>用一套完整服务缩短数字化工具的应用周期。</p><em>了解服务能力 →</em></a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <a class="nav-label" href="./products.html">产品中心 <span>⌄</span></a>
+          <div class="nav-dropdown">
+            <div class="container dropdown-layout">
+              <div class="dropdown-intro"><span>PRODUCTS</span><h3>产品中心</h3><p>覆盖制造、IT、科研、创意与办公的正版软件。</p><a href="./products.html">浏览全部产品 →</a></div>
+              <div class="dropdown-links"><h4>按场景查找</h4><a href="./products.html#smart-manufacturing"><b>智能制造</b><small>MasterCam、Abaqus</small></a><a href="./products.html#it"><b>IT 技术</b><small>GitLab、Xshell、AppScan</small></a><a href="./products.html#healthcare"><b>健康医疗</b><small>exocad、3Shape</small></a><a href="./products.html#creative"><b>创意设计</b><small>CorelDRAW、Capture One</small></a></div>
+              <div class="dropdown-links"><h4>热门产品</h4><a href="./products.html"><b>IBM SPSS Statistics</b><small>统计分析与预测建模</small></a><a href="./products.html"><b>SEE Electrical</b><small>专业电气设计</small></a><a href="./products.html"><b>BarTender</b><small>标签与条码自动化</small></a><a href="./products.html"><b>Microsoft 365</b><small>现代协同办公</small></a></div>
+              <a class="dropdown-feature product-feature" href="./products.html"><span>产品选型</span><strong>不知道如何选择？</strong><p>按团队规模、应用场景和部署方式快速筛选。</p><em>开始选型 →</em></a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <a class="nav-label" href="./support.html">服务支持 <span>⌄</span></a>
+          <div class="nav-dropdown">
+            <div class="container dropdown-layout">
+              <div class="dropdown-intro"><span>SUPPORT</span><h3>服务支持</h3><p>贯穿咨询、采购、部署、培训与售后的全周期支持。</p><a href="./support.html">进入服务中心 →</a></div>
+              <div class="dropdown-links"><h4>客户服务</h4><a href="./support.html"><b>企业采购</b><small>批量授权与集中部署</small></a><a href="./support.html"><b>技术支持</b><small>安装、升级与故障排查</small></a><a href="./support.html"><b>培训服务</b><small>企业内训与公开课程</small></a></div>
+              <div class="dropdown-links"><h4>资源中心</h4><a href="./support.html#whitepapers"><b>白皮书</b><small>产品与行业资料</small></a><a href="./support.html"><b>常见问题</b><small>快速获取使用帮助</small></a><a href="./support.html"><b>合规服务</b><small>版权与数据合规咨询</small></a></div>
+              <a class="dropdown-feature support-feature" href="./support.html"><span>快速响应</span><strong>让专业问题更快解决</strong><p>连接本地技术团队，获得贴近业务的支持。</p><em>提交需求 →</em></a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <a class="nav-label" href="./news.html">新闻中心 <span>⌄</span></a>
+          <div class="nav-dropdown">
+            <div class="container dropdown-layout">
+              <div class="dropdown-intro"><span>NEWSROOM</span><h3>新闻中心</h3><p>关注公司动态、产品资讯、行业洞察与活动信息。</p><a href="./news.html">查看全部新闻 →</a></div>
+              <div class="dropdown-links"><h4>新闻分类</h4><a href="./news.html#company"><b>公司动态</b><small>重要进展与品牌信息</small></a><a href="./news.html#product"><b>产品资讯</b><small>新品、版本与解决方案</small></a><a href="./news.html#insight"><b>行业洞察</b><small>趋势、政策与实践</small></a></div>
+              <div class="dropdown-links"><h4>媒体资源</h4><a href="./news.html#events"><b>活动资讯</b><small>会议、直播与研讨会</small></a><a href="./news.html"><b>媒体报道</b><small>来自行业媒体的关注</small></a><a href="./about.html"><b>品牌资料</b><small>企业介绍与联系方式</small></a></div>
+              <a class="dropdown-feature news-feature" href="./news.html"><span>最新发布</span><strong>软件驱动行业创新</strong><p>获取思杰马克丁的最新业务与产品动态。</p><em>阅读新闻 →</em></a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <a class="nav-label" href="./about.html">关于我们 <span>⌄</span></a>
+          <div class="nav-dropdown">
+            <div class="container dropdown-layout">
+              <div class="dropdown-intro"><span>ABOUT</span><h3>关于我们</h3><p>连接全球优秀软件与中国用户，持续创造本地价值。</p><a href="./about.html">了解思杰马克丁 →</a></div>
+              <div class="dropdown-links"><h4>认识我们</h4><a href="./about.html"><b>公司介绍</b><small>使命、愿景与核心能力</small></a><a href="./about.html#timeline"><b>发展历程</b><small>关键里程碑</small></a><a href="./about.html#join"><b>加入我们</b><small>与优秀团队共同成长</small></a></div>
+              <div class="dropdown-links"><h4>合作联系</h4><a href="./partners.html"><b>合作伙伴</b><small>共建正版软件生态</small></a><a href="./about.html#channel"><b>渠道合作</b><small>拓展长期商业价值</small></a><a href="./index.html#contact"><b>联系我们</b><small>获取业务与媒体支持</small></a></div>
+              <a class="dropdown-feature about-feature" href="./partners.html"><span>生态合作</span><strong>与全球伙伴共同成长</strong><p>连接产品、渠道与行业客户。</p><em>合作入口 →</em></a>
+            </div>
+          </div>
+        </div>
       </nav>
-    </div>
-    <div class="mega-panel" id="megaPanel">
-      <div class="container mega-inner">
-        <div class="mega-cats" id="megaCats"></div>
-        <div class="mega-items" id="megaItems"></div>
-      </div>
+      <a class="btn brand nav-cta" href="./support.html">企业咨询</a>
     </div>
   </header>
 
@@ -111,13 +155,13 @@
       <div class="container">
         <div class="head">
           <h2>客户成功案例</h2>
-          <p>不同行业标杆摘要；完整案例与行业对比见「解决方案」页（方案第三节·首页模块 6）。</p>
+          <p>不同行业标杆摘要；完整案例与行业对比见「解决方案」页。</p>
         </div>
         <div class="card case-card">
           <div class="case-visual">电子制造</div>
           <div>
             <span class="pill">某电子制造企业</span>
-            <p><strong>成果：</strong>标签错误率从 3% 降至 0.1%，年节省返工成本超 50 万元（方案示例口径）。</p>
+            <p><strong>成果：</strong>标签错误率从 3% 降至 0.1%，年节省返工成本超 50 万元。</p>
             <blockquote>「正版保障 + 本地化服务让产线与采购都更省心。」</blockquote>
             <a class="btn ghost" href="./solutions.html#cases">查看更多行业案例</a>
           </div>
@@ -140,7 +184,7 @@
       <div class="container">
         <div class="head">
           <h2>值得信赖的合作伙伴</h2>
-          <p>客户及伙伴 logo 滚动展示（示意文案），下方为核心数据（方案第三节·首页模块 7）。</p>
+          <p>客户及伙伴 logo 滚动展示，下方为核心数据。</p>
         </div>
         <div class="ticker">
           <div class="ticker-track">
@@ -157,13 +201,12 @@
     </section>
   </main>
 
-  <!-- 底部信息：方案首页模块 8 -->
   <footer id="contact">
     <div class="container footer-grid">
       <div>
         <h4>思杰马克丁</h4>
         <p>苏州思杰马克丁软件有限公司，成立于 2009 年 12 月，位于苏州工业园区，致力于推广正版软件应用与知识产权维护。</p>
-        <p style="margin-top:8px;">微信公众号：思杰马克丁（示例）</p>
+        <p style="margin-top:8px;">微信公众号：思杰马克丁</p>
       </div>
       <div>
         <h4>快捷入口</h4>
@@ -192,107 +235,14 @@
     </div>
     <div class="container copy">
       <span>© 2026 苏州思杰马克丁软件有限公司 版权所有</span>
-      <span>原型页面 · 内容依据《思杰官网优化方案》编排</span>
+      
     </div>
   </footer>
-
-  <dialog id="dlgConsult" style="border:0;border-radius:14px;padding:0;width:min(480px,92vw);">
-    <form method="dialog" style="padding:20px;">
-      <h3 style="margin:0 0 8px;">企业咨询</h3>
-      <p class="muted" style="margin:0 0 12px;color:var(--muted);font-size:14px;">提交后由顾问对接（原型示意）。</p>
-      <div class="form-grid">
-        <div><label>姓名</label><input type="text" placeholder="必填"></div>
-        <div><label>企业名称</label><input type="text" placeholder="选填"></div>
-        <div><label>需求类型</label>
-          <select><option>企业采购</option><option>行业方案</option><option>技术支持</option><option>培训服务</option></select>
-        </div>
-      </div>
-      <div class="cta-row" style="margin-top:14px;justify-content:flex-end;">
-        <button type="button" class="btn ghost" id="dlgClose">取消</button>
-        <button type="submit" class="btn brand">提交</button>
-      </div>
-    </form>
-  </dialog>
-
   <script>
-    const megaData = {
-      products: {
-        cats: ["个人软件", "企业软件", "热门推荐"],
-        items: {
-          "个人软件": [
-            ["CorelDRAW", "创意设计类"], ["会声会影", "视频剪辑"], ["PhotoZoom", "图像放大"],
-            ["FL Studio", "音频编辑"], ["PDF Expert", "办公效率"], ["CrossOver", "跨平台应用"]
-          ],
-          "企业软件": [
-            ["IBM SPSS", "数据分析"], ["Minitab", "质量管理"], ["BarTender", "标签管理"],
-            ["AppScan", "应用安全"], ["ChemDraw", "科研办公"], ["TeamViewer", "远程协作"]
-          ],
-          "热门推荐": [
-            ["会声会影", "个人视频"], ["CorelDRAW", "平面设计"], ["IBM SPSS", "统计分析"],
-            ["BarTender", "制造标签"], ["FL Studio", "音乐制作"], ["查看全部", "进入产品中心"]
-          ]
-        }
-      },
-      solutions: {
-        cats: ["制造", "教育", "创意", "医疗", "科研"],
-        items: {
-          "制造": [["BarTender", "标签自动化"], ["IBM SPSS", "质量数据分析"], ["合规维权", "版权治理"]],
-          "教育": [["Camtasia", "微课制作"], ["FL Studio", "音频课程"], ["批量授权", "校园合规"]],
-          "创意": [["CorelDRAW", "正版设计"], ["会声会影", "视频包装"], ["培训", "本地化落地"]],
-          "医疗": [["BarTender", "UDI 标签"], ["EasyRecovery", "数据恢复"], ["合规", "安全咨询"]],
-          "科研": [["IBM SPSS", "统计建模"], ["ChemDraw", "化学绘图"], ["MathType", "公式排版"]]
-        }
-      }
-    };
-
-    const megaPanel = document.getElementById("megaPanel");
-    const megaCats = document.getElementById("megaCats");
-    const megaItems = document.getElementById("megaItems");
-    let megaType = "products";
-    let megaCat = megaData.products.cats[0];
-
-    function renderMega() {
-      const data = megaData[megaType];
-      megaCats.innerHTML = data.cats.map(c =>
-        `<button type="button" class="${c === megaCat ? "active" : ""}" data-cat="${c}">${c}</button>`
-      ).join("");
-      const items = data.items[megaCat] || [];
-      const base = megaType === "products" ? "./products.html" : "./solutions.html";
-      megaItems.innerHTML = items.map(([t, d]) =>
-        `<a class="mini-card" href="${base}"><h5>${t}</h5><p>${d}</p></a>`
-      ).join("");
-      megaCats.querySelectorAll("button").forEach(btn => {
-        btn.addEventListener("click", () => {
-          megaCat = btn.dataset.cat;
-          renderMega();
-        });
-      });
-    }
-
-    document.querySelectorAll(".nav-trigger").forEach(el => {
-      el.addEventListener("mouseenter", () => {
-        megaType = el.dataset.mega;
-        megaCat = megaData[megaType].cats[0];
-      megaPanel.classList.add("open");
-        renderMega();
-      });
-    });
-
-    document.getElementById("siteHeader").addEventListener("mouseleave", () => {
-      megaPanel.classList.remove("open");
-    });
-
     const industryTrack = document.getElementById("industryTrack");
     const scrollIndustry = direction => industryTrack?.scrollBy({ left: direction * 360, behavior: "smooth" });
     document.getElementById("industryPrev")?.addEventListener("click", () => scrollIndustry(-1));
     document.getElementById("industryNext")?.addEventListener("click", () => scrollIndustry(1));
-
-    document.getElementById("btnConsult").addEventListener("click", () => {
-      document.getElementById("dlgConsult").showModal();
-    });
-    document.getElementById("dlgClose").addEventListener("click", () => {
-      document.getElementById("dlgConsult").close();
-    });
   </script>
 </body>
 </html>
