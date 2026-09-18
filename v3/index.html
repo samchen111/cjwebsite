@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>首页 - 思杰马克丁 | 全球正版商业软件发行商</title>
   <meta name="description" content="思杰马克丁：正版保障、本地化适配、全流程服务、合规安心。授权代理+本地化服务，服务个人与企业用户。">
-  <link rel="stylesheet" href="./prototype.css?v=20260918-2">
+  <link rel="stylesheet" href="./prototype.css?v=20260918-3">
 </head>
 <body>
   <header class="site-header">
@@ -159,9 +159,13 @@
             <h2>客户成功案例</h2>
             <p>以专业软件、技术服务与行业经验，帮助客户解决真实业务问题。</p>
           </div>
-          <a class="btn ghost" href="./solutions.html#cases">查看全部案例</a>
+          <div class="success-head-actions">
+            <a class="success-all-link" href="./solutions.html#cases">查看全部案例</a>
+            <button type="button" id="successPrev" aria-label="上一个案例">←</button>
+            <button type="button" id="successNext" aria-label="下一个案例">→</button>
+          </div>
         </div>
-        <div class="success-list">
+        <div class="success-list" id="successTrack">
           <article class="success-card">
             <div class="success-visual success-visual-mfg"><span>电子制造</span><strong>产线标签自动化</strong></div>
             <div class="success-copy"><span class="success-client">某电子制造企业</span><h3>构建统一、准确、可追溯的标签管理流程</h3><p>通过 BarTender 标签自动化与本地技术服务，减少人工操作，让生产、质量与采购协同更顺畅。</p><div class="success-products"><span>BarTender</span><span>部署服务</span><span>流程培训</span></div></div>
@@ -272,6 +276,10 @@
     const scrollIndustry = direction => industryTrack?.scrollBy({ left: direction * 360, behavior: "smooth" });
     document.getElementById("industryPrev")?.addEventListener("click", () => scrollIndustry(-1));
     document.getElementById("industryNext")?.addEventListener("click", () => scrollIndustry(1));
+    const successTrack = document.getElementById("successTrack");
+    const scrollSuccess = direction => successTrack?.scrollBy({ left: direction * Math.min(successTrack.clientWidth * .78, 980), behavior: "smooth" });
+    document.getElementById("successPrev")?.addEventListener("click", () => scrollSuccess(-1));
+    document.getElementById("successNext")?.addEventListener("click", () => scrollSuccess(1));
   </script>
 </body>
 </html>
