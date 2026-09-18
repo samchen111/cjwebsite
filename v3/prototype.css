@@ -725,3 +725,26 @@ footer {
   .success-copy { padding:20px 4px 8px; }
   .success-result { padding-left:4px; padding-right:4px; }
 }
+
+
+/* Customer stories — light theme text correction */
+.success-section { background:#fff; color:#111827; }
+.success-section .head h2 {
+  margin:0 0 8px;
+  color:#111827;
+  font-size:clamp(24px,3vw,32px);
+  letter-spacing:normal;
+  line-height:normal;
+}
+.success-section .head p { color:#64748b; font-size:inherit; }
+.success-section .eyebrow { color:var(--brand); }
+.success-all-link { color:#111827; }
+.success-head-actions button { border:1px solid #e5e7eb; background:#f8fafc; color:#111827; }
+.success-head-actions button:hover { border-color:#111827; background:#111827; color:#fff; }
+.success-client { color:#111827; }
+.success-copy h3 { color:#111827; }
+.success-copy p { color:#64748b; }
+.success-products span { border-color:#e5e7eb; background:#f8fafc; color:#475569; }
+.success-result small { color:#64748b; }
+.success-result strong { color:#111827; }
+.success-result a { color:#111827; }
